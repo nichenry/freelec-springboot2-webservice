@@ -23,7 +23,7 @@ deploy:
   - provider: s3
     access_key_id: $AWS_ACCESS_KEY
     secret_access_key: $AWS_SECRET_KEY
-    bucket: freelec_springboot3_build
+    bucket: freelec-springboot3-build
     region: ap-northeast-2
     skip_cleanup: true
     acl: private
