@@ -16,8 +16,12 @@ public class IndexController {
 
     private final PostsService postsService;
 
+    @GetMapping("/")
+    public String index() {
+        return "redirect:/list";
+    }
     @GetMapping("/list")
-    public String index(Model model, @LoginUser SessionUser user) {
+    public String list(Model model, @LoginUser SessionUser user) {
         model.addAttribute("posts",postsService.findAllDesc());
 
         if( user != null )
