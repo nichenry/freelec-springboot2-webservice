@@ -4,7 +4,7 @@ import org.springframework.mock.env.MockEnvironment;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class ProfileControllerUnitTest {
-
+/*
     @Test
     public void real_profile이_조회된다() {
         String expectedProfile = "real";
@@ -39,5 +39,5 @@ public class ProfileControllerUnitTest {
 
         String profile = controller.profile();
         assertThat(profile).isEqualTo(expectedProfile);
-    }
+    }*/
 }
