@@ -1,8 +1,6 @@
 import com.jojoldu.book.springboot.web.ProfileController;
 import org.junit.Test;
-import org.mockito.Mock;
 import org.springframework.mock.env.MockEnvironment;
-
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class ProfileControllerUnitTest {
@@ -16,9 +14,7 @@ public class ProfileControllerUnitTest {
         env.addActiveProfile("real-db");
 
         ProfileController controller = new ProfileController(env);
-
         String profile = controller.profile();
-
         assertThat(profile).isEqualTo(expectedProfile);
     }
 
@@ -31,9 +27,7 @@ public class ProfileControllerUnitTest {
         env.addActiveProfile("real-db");
 
         ProfileController controller = new ProfileController(env);
-
         String profile = controller.profile();
-
         assertThat(profile).isEqualTo(expectedProfile);
     }
 
@@ -44,7 +38,6 @@ public class ProfileControllerUnitTest {
         ProfileController controller = new ProfileController(env);
 
         String profile = controller.profile();
-
         assertThat(profile).isEqualTo(expectedProfile);
     }
 }
